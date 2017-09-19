@@ -1,0 +1,26 @@
+// example board
+
+I would need to number the areas so the user could easily select where to move
+I could store each number/space in a string to start with
+  1 | 2 | 3
+  ---------
+  4 | 5 | 6
+  ---------
+  7 | 8 | 9
+
+  then I could have the space that the user selects be overwritten with
+  an x or an o
+  each time the board needs to be rendered it can be printed out by concatenating the 
+  strings together in a console.log
+
+// players would need a way to submit their moves
+indicatePlayersTurn(player);
+move(space);
+
+// the game would need a way to check if player won after each turn
+checkIfPlayerWon(player); TODO: how to do this??? may need to store all possible winning combinations
+  each time a player makes a move, would have to check to see if one of the winning combos was triggered
+playerWon(player);
+
+// the board would need to re-render after player submits turn
+drawBoard();
