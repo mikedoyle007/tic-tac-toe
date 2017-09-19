@@ -34,7 +34,7 @@ const displayTurnMessage = (player) => {
 const takeTurn = (space) => {
   while (!space) {
   } 
-  console.log('space = ', space);
+  console.log('move = ', space);
   return;
 }
 
@@ -70,12 +70,14 @@ const initGame = () => {
   
   displayBoard();
   // displayTurnMessage('X');
+  displayTurnMessage(currentPlayer);
 
   // wait for player response while no winners
   while (!won) {
     //
     // let player take a turn
     takeTurn();
+    console.log('passed take a turn');
     // update board
     // render board
     // check if player has won game
